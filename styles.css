@@ -57,6 +57,13 @@ input {
   margin: auto;
 }
 
+.input-grid .container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+}
+
 button {
   max-width: fit-content;
   display: inline-flex;

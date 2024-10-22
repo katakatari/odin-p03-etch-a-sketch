@@ -12,12 +12,21 @@
 <body>
   <main>
     <h1>Etch a Sketch</h1>
-    <div class="canvas"></div>
     
     <div class="input-grid">
-      <input type="text" name="cols" placeholder="16">
-      <input type="text" name="rows" placeholder="16">
+      <div class="container">
+        <label for="cols">Columns</label>
+        <input type="text" name="cols" placeholder="16">
+        <p class="default-value"></p>
+      </div>
+      <div class="container">
+        <label for="rows">Rows</label>
+        <input type="text" name="rows" placeholder="16">
+        <p class="default-value"></p>
+      </div>
     </div>
+
+    <div class="canvas"></div>
     <button>Adjust</button>
   </main>
 </body>
