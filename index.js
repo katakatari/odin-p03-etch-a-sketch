@@ -30,14 +30,14 @@ const drawBoxes = (cols, rows) => {
   Array(cols * rows).fill(null).forEach((n, i) => {
     const box = document.createElement("div");
     box.classList = "box"
-    box.id = i + 1;
-    box.textContent = i + 1;
+    box.textContent = "·";
+    box.addEventListener("pointerenter", () => box.setAttribute("style", `opacity: 25%`))
 
     canvas.appendChild(box);
   });
 
   // Adjust the canvas max-width based on the grid columns
-  canvas.setAttribute("style", `max-width: calc(${grid.cols + 1} * 16px)`);
+  canvas.setAttribute("style", `max-width: calc(${grid.cols + 1} * 20px)`);
 }
 
 // Draw the canvas on first render
